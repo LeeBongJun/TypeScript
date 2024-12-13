@@ -31,7 +31,7 @@ interface GetName {
 interface User {
   name : string , 
   readonly age : number ,
-  getName : GetName
+  getName : (param : string) => string
 }
 
 const heropy : User = {
